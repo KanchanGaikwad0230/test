@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button without DOM</button></title>
+</head>
+
+<body>
+    <input id="num1" type="number" placeholder="Enter 1st Number">
+    <input id="num2" type="number" placeholder="Enter 2nd Number">
+
+    <button onclick="addtion()"> ADD</button>
+    <button onclick="substraction()"> SUB</button>
+    <button onclick="division()"> DIVIDE</button>
+    <button onclick="multiply()">MUL</button>
+
+    <script>
+
+        function addtion() {
+
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+
+            let add1 = Number(n1) + Number(n2);
+            alert(add1);
+
+        }
+
+        function substraction() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+
+            alert(n1 - n2);
+        }
+
+        function division() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+
+            alert(n1 / n2);
+        }
+
+        function multiply() {
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+
+            alert(n1 * n2);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>DOM Selectors</title>
+</head>
+
+<body>
+    <h1>First H1</h1>
+    <h1>Second H1</h1>
+    <h3>First H3</h3>
+    <h3>Second H3</h3>
+    <h5>First H5</h5>
+    <h5>Second H5</h5>
+    <h5>Third H5</h5>
+    <div class="green">First DIV</div>
+    <div class="red">Second DIV</div>
+    <div class="blue">Third DIV</div>
+    <p class="green">First P</p>
+    <p class="red">Second P</p>
+    <p class="blue">Third P</p>
+    <hr />
+    <button class="btn1">Change H1</button>
+    <button class="btn3">Change H3</button>
+    <button class="btn5">Change H5</button>
+    <button>Change Green</button>
+    <button>Change Red</button>
+    <button>Change Blue</button>
+    <script>
+    </script>
+</body>
+
+</html>
+<script>
+    document.querySelector(".btn1").addEventListener("click", changeH1)
+
+    function changeH1() {
+
+    document.querySelector("h1").style.color = "red"
+
+    }
+
+    document.querySelector(".btn3").addEventListener("click", changeH3)
+
+    function changeH3() {
+
+    document.querySelector("h3").style.color = "green"
+
+    }
+
+    document.querySelector(".btn5").addEventListener("click", changeH5)
+
+    function changeH5() {
+
+    document.querySelector("h5").style.color = "blue"
+
+    function changeH3() {
+
+        let h3s = document.querySelectorAll(".green")
+        for(let i=0; i<h3s.length; i++)
+        {
+            h3s[i].style.backgroundColor = "green"
+        }
+    }
+
+    }
+</script>
